@@ -1,0 +1,6 @@
+while True :
+    choice = input("Διάλεξε (1 για παιχνίδι, 2 για έξοδο): ")
+    if choice == 1 :
+        print("Το παιχνίδι ξεκινάει!")
+    elif choice == 2 :
+        break
