@@ -1,0 +1,11 @@
+def charge_battery(max_charge):
+    battery = 0
+    
+    while battery < max_charge:
+        print(f"percentage{battery}")
+        battery = battery + 20
+    
+    print("Fully Charged!")
+    return battery
+
+charge_battery(100)
