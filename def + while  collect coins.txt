@@ -1,0 +1,11 @@
+def collect_coins(target_coins):
+    coins = 0
+    
+    while coins < target_coins :
+        print(f"Coins: {coins}")
+        coins = coins + 5
+        
+    print("Bag is full!")
+    return coins
+    
+collect_coins(15)
