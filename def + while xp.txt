@@ -1,0 +1,12 @@
+def gain_xp(target_xp):
+    current_xp = 0  
+    
+    while current_xp < target_xp:  
+        print(f"Έχεις {current_xp} XP")  
+        current_xp = current_xp + 10
+        
+    
+    print("Level up!")
+    return current_xp  
+
+gain_xp(30)
