@@ -1,0 +1,13 @@
+def dragon_battle():
+    for dragon in range(1, 4):
+        print(f"fight with the dragon {dragon}")
+        hits = 0
+        while hits < 3:
+            hits = hits + 1
+            if hits < 3:
+                print("the hero hits the dragon")
+                
+            else:
+                print(f"the dragon {dragon} was won")
+                
+dragon_battle()
