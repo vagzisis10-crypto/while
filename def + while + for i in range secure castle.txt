@@ -1,0 +1,13 @@
+def secure_castle():
+    for gate in range(1, 4):
+        print(f"inspection in gate {gate} ")
+        scans = 0
+        while scans < 3:
+            scans = scans + 1
+            if scans < 3  :
+                print("scanning")
+                
+            else:
+                print(f"the gate {gate} locked with safety")
+
+secure_castle()
