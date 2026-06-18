@@ -1,0 +1,8 @@
+while True :
+    order = input("Διάλεξε (pizza / burger / exit): ")
+    if order == "pizza":
+        print("Η πίτσα ετοιμάζεται!")
+    elif order == "burger":
+        print("Το μπέργκερ ετοιμάζεται!")
+    else:
+        break
