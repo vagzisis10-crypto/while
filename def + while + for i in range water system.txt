@@ -1,0 +1,12 @@
+def water_system():
+    total_liters = 0
+    for greenhouse in range(1, 3):
+        print(f"start greenhouse {greenhouse}")
+        waterings = 0
+        while waterings < 2:
+            waterings = waterings + 1
+            total_liters = total_liters + 5
+            print(f"watering {waterings} done")
+    print(f"total liters {total_liters}")
+    
+water_system()
