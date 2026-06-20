@@ -1,0 +1,28 @@
+def family_gathering():
+    guests = ["Nikos", "Anna", "Giorgos"]
+    
+    while True:
+        print("\n--- GUEST LIST ---")
+        print("1. See the guests")
+        print("2. Add a new guest")
+        print("3. Close the program")
+        
+        choice = input("Choose an option (1-3): ")
+        
+        if choice == "1":
+            print("\nCurrent Guest List:")
+            for i in range(len(guests)):
+                print(f"Number {i + 1}: {guests[i]}")
+                
+        elif choice == "2":
+            new_guest = input("Give me new guest's name: ")
+            guests.append(new_guest)
+            print(f"'{new_guest}' successfully added!")
+            
+        elif choice == "3":
+            print("Program closing. Goodbye!")
+            break
+        else:
+            print("Invalid choice! Try again.")
+            
+family_gathering()
