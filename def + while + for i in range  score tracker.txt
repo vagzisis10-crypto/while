@@ -1,0 +1,27 @@
+def score_tracker():
+    scores = [120, 450, 300]
+    while True:
+        print("\n--- SCORE TRACKER ---")
+        print("1. View all scores")
+        print("2. Add new score")
+        print("3. Exit")
+        
+        choice = input("Choose an option (1-3): ")
+        
+        if choice == "1":
+            print("\nAll Match Scores:")
+            for i in range(len(scores)):
+                print(f"Match {i + 1}: {scores[i]} points")
+                
+        elif choice == "2":
+            new_score = int(input("Give new score: "))
+            scores.append(new_score)
+            print("Score added successfully!")
+            
+        elif choice == "3":
+            print("Game Over")
+            break
+        else:
+            print("Invalid choice")
+                
+score_tracker()
