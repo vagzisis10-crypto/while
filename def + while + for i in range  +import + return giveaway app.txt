@@ -1,0 +1,30 @@
+import random
+
+def giveaway_app():
+    participants = ["Nikos", "Anna", "Aris"]
+    
+    while True:
+        print("1. View participants")
+        print("2. Add new participant")
+        print("3. Pick a winner & Exit")
+        
+        choice = input("Choose an option(1-3):")
+        
+        if choice == "1":
+            for i in range(len(participants)):
+                print(f"Participant {i + 1}: {participants[i]}")
+                
+        elif choice == "2":
+            new_participant = input("Give new participant name: ")
+            participants.append(new_participant)
+            print(f"{new_participant} added to the giveaway!")
+            
+        elif choice == "3":
+            winner = random.choice(participants)
+            return winner
+            
+        else:
+            print("Error")
+
+lucky_person = giveaway_app()
+print(f"🎉 The big winner is: {lucky_person}! 🎉")
