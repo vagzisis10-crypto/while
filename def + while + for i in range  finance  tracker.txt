@@ -1,0 +1,23 @@
+def finance_tracker():
+    earnings = [50, 120, 80]
+    
+    while True:
+        print("1. View all earnings")
+        print("2. Add new earning")
+        print("3. Exit")
+        
+        choice = input("Choose an option(1-3):")
+        
+        if choice == "1":
+            for i in range(len(earnings)):
+                print(f"{i + 1}. {earnings[i]} €")
+        elif choice == "2":
+            new_earning = int(input("new_earning:"))
+            earnings.append(new_earnings)
+        elif choice == "3":
+            print("Goodbye")
+            break
+        else:
+            print("Error")
+            
+finance_tracker()
