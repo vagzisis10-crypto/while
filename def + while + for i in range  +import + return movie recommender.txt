@@ -1,0 +1,28 @@
+import random
+
+def movie_recommender():
+    movies = ["Inception", "Matrix", "Avatar"]
+    
+    while True:
+        print("1. View movies")
+        print("2. Add a new movie")
+        print("3. Pick a suggested movie  and Exit")
+        
+        choice = input("Choose an option(1-3):")
+        
+        if choice == "1":
+            for i in range(len(movies)):
+                print(f"Movies {i + 1}: {movies[i]}")
+        elif choice == "2":
+            new_movie = input("Give me a new movie name:")
+            movies.append(new_movie)
+            print(f"{new_movie} added to the movies!")
+        elif choice == "3":
+            suggested_movie = random.choice(movies)
+            return suggested_movie
+        else:
+            print("Error")
+            
+suggested_movie = movie_recommender()
+print(f"🎉 The new_movie is: {suggested_movie}! 🎉")
+            

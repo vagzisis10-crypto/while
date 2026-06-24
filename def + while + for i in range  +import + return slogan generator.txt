@@ -1,0 +1,27 @@
+import random
+
+def slogan_generator():
+    slogans = ["Just do it", "Think different", "Open happiness"]
+    
+    while True:
+        print("1. View all slogans")
+        print("2. Add a new slogan")
+        print("3. Pick a slogan and Exit")
+        
+        choice = input("Choose an option(1-3):")
+        
+        if choice == "1":
+            for i in range(len(slogans)):
+                print(f"slogans {i + 1}: {slogans[i]}")
+        elif choice == "2":
+            new_slogan = input("Give me a new slogan:")
+            slogans.append(new_slogan)
+            print(f"{new_slogan} added to slogans")
+        elif choice == "3":
+            suggested_slogan = random.choice(slogans)
+            return suggested_slogan
+        else:
+            print("Error")
+
+suggested_slogan = slogan_generator()
+print(f"The  new_slogan is :{suggested_slogan}")
