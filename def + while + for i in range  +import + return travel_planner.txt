@@ -1,0 +1,27 @@
+import random
+
+def travel_planner():
+    destinations = ["Rome", "Paris", "Tokyo"]
+    
+    while True:
+        print("1. View all destinations")
+        print("2. Add a new destnation")
+        print("3. Pick a destination and exit")
+        
+        choice = input("Choose an option(1-3):")
+        
+        if choice == "1":
+            for i in range(len(destinations)):
+                print(f"destinations{i + 1}:{destinations[i]}")
+        elif choice == "2":
+            new_destination = input("Give new destination:")
+            destinations.append(new_destination)
+            print(f"{new_destination} added to {destinations}")
+        elif choice == "3":
+            suggested_destination = random.choice(destinations)
+            return suggested_destination
+        else:
+            print("Error")
+            
+suggested_destination = travel_planner()
+print(f"the new_destination is : {suggested_destination}")

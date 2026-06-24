@@ -1,0 +1,28 @@
+import random
+
+def song_picker():
+    playlist = ["Eminem", "Linkin Park", "Coldplay"]
+    
+    while True:
+        print("1. View all songs")
+        print("2. Add a new song")
+        print("3. Pick a song and exit")
+        
+        choice = input("Choose an option(1-3):")
+        
+        if choice == "1":
+            for i in range(len(playlist)):
+                print(f"playlist{i + 1}: {playlist[i]}")
+        elif choice == "2":
+            new_playlist = input("Give new playlist")
+            playlist.append(new_playlist)
+            print(f"{new_playlist} added to {playlist}")
+        elif choice == "3":
+            suggested_playlist = random.choice(playlist)
+            return suggested_playlist
+        else:
+            print("Error")
+
+suggested_playlist = song_picker()
+print("the new playlist is: {suggested_playlist}")
+           
