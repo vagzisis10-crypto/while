@@ -1,7 +1,0 @@
-battery = 3
-
-while battery > 0 :
-    print(f"{battery} percentage")
-    battery = battery - 1
-    
-print("phone closed")
